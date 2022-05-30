@@ -1,5 +1,3 @@
-import { render } from '@testing-library/react';
-
 import './App.css';
 import Entries from './components/addEntries.js'
 
