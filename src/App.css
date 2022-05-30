@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --dark-teal: #2a9d8f;
+  --darker-teal: #1c7c708f;
+  --deep-red: #d90429;
+  --deeper-red: #ffdce2;
+  --light-grey: #f8f9fa;
+  --mid-grey: #dee2e6;
+  --charcole: #343a40;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  /* background-color: var(--mid-grey); */
+  background-image: linear-gradient(180deg, var(--mid-grey), var(--light-grey));
+  font-family: 'Didact Gothic', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 6vh;
+}
+
+h2 {
+  font-size: 4vh;
+}
+
+input {
+  width: 80%;
+  height: 40vh;
+  border-style: none;
+  border-radius: 2vh;
+  box-shadow: inset 0 5px 5px var(--mid-grey);
+}
+
+
+
+/* To-do list main elements */
+
+.container {
+  width: 80vh;
+  height: auto;
+  background-color: var(--light-grey);
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45vh;
+  /* padding-bottom: 5vh; */
+  border-radius: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0px 10px 20px var(--mid-grey);
+}
+
+.enterTodoContainer {
+  width: 74vh;
+  height: 40vh;
+  background-color: var(--light-grey);
+  padding: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5vh;
+  box-shadow: 0px 10px 20px var(--mid-grey);
+  z-index: 3;
+}
+
+.entryContainer {
+  width: 74vh;
+  height: 10vh;
+  background-color: var(--light-grey);
+  margin: 3vh 0 3vh 0;
+  padding: 3vh;
+  border-radius: 2vh;
+  box-shadow: 0px 10px 20px var(--mid-grey);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 2;
+}
+
+.entryContainer>p {
+  width: 40vh;
+  margin: 2vh;
+}
+
+
+/* Buttons */
+
+.taskEnter {
+  width: 20%;
+  height: 40vh;
+  border-style: none;
+  background-color: var(--charcole);
+  color: var(--white);
+  border-radius: 50px 50px;
+  margin: 5vh 0 5vh 0;
+  box-shadow: 0px 10px 20px var(--mid-grey);
+  transition: background-color .2s linear;
+}
+
+.taskEnter:hover {
+  background-color: var(--dark-teal);
+}
+
+.entryContainer>button {
+  margin: 2vh;
+  box-shadow: 0px 10px 20px var(--mid-grey);
+}
+
+.entry.entryContainerToggle>button{
+  margin: 2vh;
+  box-shadow: 0px 10px 20px var(--charcole);
+}
+
+.taskComplete {
+  border-style: none;
+  width: 15vh;
+  height: 5vh;
+  background-color: var(--dark-teal);
+  border-radius: 50px 50px;
+  color: var(--white);
+  transition: background-color .2s;
+}
+
+.taskComplete:hover {
+  background-color: var(--darker-teal);
+}
+
+.taskCompleteToggle {
+  background-color: var(--deeper-red);
+}
+
+.taskDelete {
+  border-style: none;
+  width: 15vh;
+  height: 5vh;
+  background-color: var(--deep-red);
+  border-radius: 50px 50px;
+  color: var(--white);
+  transition: background-color .2s;
+}
+
+.taskDelete:hover {
+  background-color: var(--deeper-red);
+}
